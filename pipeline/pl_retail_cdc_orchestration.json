@@ -1,0 +1,31 @@
+{
+	"name": "pl_retail_cdc_orchestration",
+	"properties": {
+		"activities": [
+			{
+				"name": "Run_Retail_CDC_Pipeline",
+				"description": "Triggers the Databricks workflow that validates, processes CDC, and reconciles retail order data",
+				"type": "DatabricksJob",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"jobId": "1102650129609275"
+				},
+				"linkedServiceName": {
+					"referenceName": "adf_retail_cdc_proj",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-09-17T23:06:07Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

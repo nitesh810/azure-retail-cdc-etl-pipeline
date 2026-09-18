@@ -1,0 +1,15 @@
+{
+	"name": "adf-retail-cdc-proj",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "westus3",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "451c9d1c-36df-4043-ab17-63e95b4342fd",
+		"tenantId": "98823093-b8f3-4868-b963-0e3bafe09354"
+	}
+}

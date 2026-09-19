@@ -54,11 +54,11 @@ Source Data → Bronze (raw) → Silver (validated + CDC merged) → Reconciliat
 
 ## 🔍 Data Quality & Reconciliation Results
 
-- ✅ Schema validation: 8/8 columns matched expected structure
-- ✅ Row count reconciliation: Silver row count matches expected distinct order_id count
-- ✅ Sum reconciliation: Bronze and Silver aggregate totals matched exactly
-- ✅ Referential integrity: 0 orphan records
-- ✅ Row-level hash comparison: 0 mismatched records
+- Schema validation: 8/8 columns matched expected structure
+- Row count reconciliation: Silver row count matches expected distinct order_id count
+- Sum reconciliation: Bronze and Silver aggregate totals matched exactly
+- Referential integrity: 0 orphan records
+- Row-level hash comparison: 0 mismatched records
 
 ## 📌 Notes
 
